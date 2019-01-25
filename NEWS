@@ -1,4 +1,14 @@
-permuco 1.0.1
+permuco 1.0.2 (github)
+--------------------------------------
+
+ * correction benjaminin to benjamini
+ * adding parametric (uncorrected) pvalues for signal
+ * add argument "nbbaselinepts" and "nbptsperunit" in plot.clusterlm
+ * change argument names: bilateral in two.sided, left in less,right in greater
+ * update vignette permuco_tutorial.pdf
+
+
+permuco 1.0.1 (cran)
 --------------------------------------
 
  *  add vignette permuco_tutorial.pdf
@@ -8,5 +18,3 @@ permuco 1.0.0
 --------------------------------------
 
  * Initial release
-
-

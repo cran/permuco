@@ -5,8 +5,8 @@
 \title{Plot cluster or parameters.}
 \usage{
 \method{plot}{clusterlm}(x, effect = "all", type = "statistic",
-  multcomp = "clustermass", laterality = "bilateral", enhanced_stat = F,
-  ...)
+  multcomp = "clustermass", alternative = "two.sided",
+  enhanced_stat = FALSE, nbbaselinepts = 0, nbptsperunit = 1, ...)
 }
 \arguments{
 \item{x}{A \code{clusterlm} object.}
@@ -15,11 +15,15 @@
 
 \item{type}{A character string that specified the values to highlight. \code{"statistic"} or \code{"coef"} are available. Default is \code{"statistic"}.}
 
-\item{multcomp}{A character sting specifying the p-value to plot. Default is \code{"clustermass"}. See \link{clusterlm}.}
+\item{multcomp}{A character string specifying the method use to correct the p-value. It should match the one computed in the object. Default is \code{"clustermass"}. See \link{clusterlm}.}
 
-\item{laterality}{A character string specifying the laterality of the test when t-test are computed. Avaible options are \code{"right"}, \code{"left"} and \code{"bilateral"}. Default is \code{"bilateral"}.}
+\item{alternative}{A character string specifying the alternative hypothesis for the t-test. The available options are \code{"greater"}, \code{"less"} and \code{"two.sided"}. Default is \code{"two.sided"}.}
 
-\item{enhanced_stat}{logical. Default is \code{F}. If \code{TRUE}, the enhanced statistic will be plotted overwise it will plot the observed statistic. Change for the \code{"tfce"} or the \code{"clustermass"}, multiple comparisons method.}
+\item{enhanced_stat}{A logical. Default is \code{FALSE}. If \code{TRUE}, the enhanced statistic will be plotted overwise it will plot the observed statistic. Change for the \code{"tfce"} or the \code{"clustermass"} multiple comparisons procedures.}
+
+\item{nbbaselinepts}{An integer. Default is 0. If the origin of the x axis should be shifted to show the start of the time lock, provide the number of baseline time points.}
+
+\item{nbptsperunit}{An integer. Default is 1. Modify this value to change the scale of the label from the number of points to the desired unit. If points are e.g. sampled at 1024Hz, set to 1024 to scale into seconds and to 1.024 to scale into milliseconds.}
 
 \item{...}{further argument pass to plot.}
 }
