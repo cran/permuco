@@ -1,12 +1,12 @@
 #' @importFrom stats aov update as.formula
-aovperm_rnd <- function( formula, data, method, np, P, coding_sum, rnd_rotation, new_method = NULL){
+aovperm_rnd <- function( formula, data, method, type, np, P, coding_sum, rnd_rotation, new_method = NULL){
 
   if(is.null(coding_sum)){coding_sum = T}
 
   if(is.null(new_method)){new_method = F}
   if(is.null(method)){method = "Rd_kheradPajouh_renaud"}
   if(!new_method){
-    method = match.arg(method,c("Rd_kheradPajouh_renaud","Rde_kheradPajouh_renaud"))
+    method = match.arg(method,c("Rd_kheradPajouh_renaud","Rde_kheradPajouh_renaud","Rd_replic_kheradPajouh_renaud"))
   }
 
 
@@ -14,6 +14,7 @@ aovperm_rnd <- function( formula, data, method, np, P, coding_sum, rnd_rotation,
   switch(method,
          "Rd_kheradPajouh_renaud"={funP=function(...){fisher_Rd_kheradPajouh_renaud_rnd(...)}},
          "Rde_kheradPajouh_renaud"={funP=function(...){fisher_Rde_kheradPajouh_renaud_rnd(...)}},
+         "Rd_replic_kheradPajouh_renaud" = {funP=function(...){fisher_Rd_replic_kheradPajouh_renaud_rnd(...)}},
          {warning(paste("the method",method, "is not defined. Choose between Rd_kheradPajouh_renaud or Rde_kheradPajouh_renaud. Set new_method = TRUE to allow user-defined functions."))
            funP=function(...){eval(parse(text=paste("fisher_",method,"_rnd(...)",sep="",collpase="")))}})
 
@@ -59,7 +60,8 @@ aovperm_rnd <- function( formula, data, method, np, P, coding_sum, rnd_rotation,
   checkBalancedData(fixed_formula = formula_f, data = cbind(y,mf))
 
   #compute permutation
-  if (is.null(P)) {P = Pmat(np = np, n = length(y))}
+  if (is.null(P)) {P = Pmat(np = np, n = length(y), type = type)}
+  type = attr(P,"type")
   np = np(P)
 
   ##distribution
@@ -77,13 +79,13 @@ aovperm_rnd <- function( formula, data, method, np, P, coding_sum, rnd_rotation,
 
   #permutation pvalue
   permutation_pvalue = apply(distribution,2,function(d){compute_pvalue(distribution = d,alternative="two.sided", na.rm = T)})
-  table$'permutation P(>F)' = permutation_pvalue
+  table$'resampled P(>F)' = permutation_pvalue
 
   ##sort effect
   table = table[order(link[3,], link[1,]),]
   distribution = distribution[,order(link[3,], link[1,])]
 
-  attr(table,"type") <- paste("Permutation test using",method,"to handle nuisance variables and",np, "permutations.")
+  attr(table,"type") <- paste0("Resampling test using ",method," to handle nuisance variables and ",np," ", attr(P,"type"),"s.")
 
   out=list()
   out$y = y
