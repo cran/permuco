@@ -1,6 +1,6 @@
-809f6fffbdcb86be66d5c56808987f70 *DESCRIPTION
+fde714256a230fe56472d138b7d75e1b *DESCRIPTION
 8bcb4daaa8dba3153192208406efd52d *NAMESPACE
-497dee8792a8d9b06b51e33b5d4e1695 *NEWS.md
+ee6a32be7198f9c16f91a92dc755372f *NEWS.md
 da5cd2212a61dd2b4e09b3433c4ba840 *R/Pmat.R
 afcb17607fe70c10dab64b50f7c6a266 *R/Pmat_product.R
 1aac968977b1d6f42ad580d33af91f88 *R/RcppExports.R
@@ -19,14 +19,15 @@ d7611d8a9b24d9f8a3a1c18164afea8f *R/check_P.R
 5cca75c63fa019a99dd0bfc5f9e133e7 *R/cluster_methods_rnd.R
 35a942c6ed55f482c61b5425f14109a9 *R/cluster_table.R
 d867014c3b5e613a44f7cc94752b7623 *R/cluster_table_clustermass.R
-7d46e4a6c599be795ba936d2fccef7e2 *R/clusterlm.R
-766ee03b0c86172c22da064b424c5b15 *R/clusterlm_fix.R
-cafa7964f88471f115445a3aa58232a0 *R/clusterlm_rnd.R
+48dbdb40439ec0c5dbc4bc976acc6e83 *R/clusterlm.R
+a9e671a99fba3374aed7694c788f8da3 *R/clusterlm_fix.R
+b53bec3996b4dfa1f12c19899b19190d *R/clusterlm_rnd.R
 ce2d96116750517ac45352e10c0b8343 *R/compute_all_pvalue.R
 15972fe14d2b13bbae0ccdcbcc3fc904 *R/compute_benjamini_hochberg.R
 496f147a0f814228309db0d78be5daaf *R/compute_bonferroni.R
 0118c2f7859edcc72159d0122cd0d6e6 *R/compute_clusterdepth.R
 c8e5dfaa84e032b52ef78b694d13e139 *R/compute_clusterdepth_head.R
+00613fccc7d774f7f41774723ad98138 *R/compute_clusterdepth_tr.R
 b53044636067392d113e84acc90b3856 *R/compute_clustermass.R
 7935449e23df068214d390481a69bc87 *R/compute_degree_freedom_fix.R
 8feafbb33e8193fd18e4603633b43d07 *R/compute_degree_freedom_rnd.R
@@ -63,8 +64,8 @@ ce42d0b5e98d1d7211a49bb4f4572d09 *R/print.multcomp_table.R
 17a4be6ea086c12f84f729a12b6ab6e2 *R/summary.clusterlm.R
 34a99e3dff9249ebc583a314affba377 *R/summary.lmperm.R
 244b6cf45e8a597dcfb88b45041f2bde *R/switch_multcomp.R
-fb78538ad05a2d53214452d6f2df3cc1 *README.md
-a58518c69b6b30eeb5e603284d2f8a0b *build/vignette.rds
+645316416c595c932af85e2b00fca1eb *README.md
+dd8e048289a1f27198881bfb4d820c64 *build/vignette.rds
 f1ad38729e23ac8e8ab541c3044590cb *data/attentionshifting_design.rda
 91016fb9bd992f1c9b04f61b8d5a1207 *data/attentionshifting_signal.rda
 153c78bae072bca61466ff47082316cd *data/emergencycost.rda
@@ -96,7 +97,7 @@ a2ffa1a867575a4ca0246423ad7153ad *man/plot.clusterlm.Rd
 c7683efbc5df0ef23ea564cdef861dea *man/print.clusterlm.Rd
 8a04a14346b469a9947103a8aeaf87c1 *man/summary.clusterlm.Rd
 1fa80ec3b3577ff83d63ce9f4613afb2 *src/RcppExports.cpp
-8e42af410d0ab1610bb703fb8b3eaf76 *src/clusterdepth.cpp
+840aa7778700e1d674a74abf6af71dd9 *src/clusterdepth.cpp
 5dc3c17f95ab33f094ab7d0ae31c9e0a *src/tfce.cpp
 f804d4d54ef2b7302f9e8c8f376e3ad3 *src/troendle.cpp
 e02f1cce45c50686bbe32e1d7ebcc2df *tests/testthat.R
