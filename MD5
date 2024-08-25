@@ -1,6 +1,6 @@
-fde714256a230fe56472d138b7d75e1b *DESCRIPTION
+1c21d07f7c2c6aac72b0a1e47b353f45 *DESCRIPTION
 8bcb4daaa8dba3153192208406efd52d *NAMESPACE
-ee6a32be7198f9c16f91a92dc755372f *NEWS.md
+eb0b07f00f7c90abec9f3101df2fffd5 *NEWS.md
 da5cd2212a61dd2b4e09b3433c4ba840 *R/Pmat.R
 afcb17607fe70c10dab64b50f7c6a266 *R/Pmat_product.R
 1aac968977b1d6f42ad580d33af91f88 *R/RcppExports.R
@@ -36,7 +36,7 @@ cc995adb9fa070e3ace91706922eff6b *R/compute_holm.R
 a3e2c9f2139a8078ffdb19551f61513c *R/compute_minP.R
 bc8cc462f71f664896269e572e82e9d2 *R/compute_pvalue.R
 f5705b01736b93fcf6a70e7ddf13dc1f *R/compute_stepdownmaxT.R
-db4ada5790e285ccbf50ca1167ac3d16 *R/compute_tfce.R
+c6a1754f45061f0d43812c4f73868961 *R/compute_tfce.R
 a2f5dfc22c0b5d637fd95de6a87be4b4 *R/compute_tfce_statistic.R
 4411c01b23f5a5a44efa0d5c99203342 *R/compute_troendle.R
 bcad3d9f28e0b49743a43545958de47d *R/data.R
@@ -51,7 +51,7 @@ a6f2cd0f80b7deee49a125703664ee7c *R/lmperm.R
 c9dcac3bb08af220a7f0118853cb35db *R/lmperm_fix.R
 a2712ce1d1ddf37d875c3c72ebae8c21 *R/methods.R
 4e1eaeb5d920fd70272c46b9b024758d *R/methods_rnd.R
-347a16572a91aa3eaa23453b5fe6607d *R/np.R
+217d87eefd9d5f8300aceb7edd989ffa *R/np.R
 3b0bfb375af2e37d64b47c3e94f50091 *R/old_cluster_methods.R
 c2ea67e8aad39fc6941084235855a48b *R/old_cluster_private.R
 a323dcf3aa5bec81418a7dd5eb83c2c1 *R/plot.clusterlm.R
@@ -86,7 +86,7 @@ d3d8fa762f29f1f4a5a1948860e8db82 *man/compute_clusterdepth_head.Rd
 ce10bfff017b2c257a15a6d556909369 *man/compute_maxT.Rd
 a132071f34847165376b4ffc10e92222 *man/compute_minP.Rd
 89dd69fd415b2508fe6abf91ba3dc912 *man/compute_stepdownmaxT.Rd
-cd8967959e6205e8971f688f2724b37a *man/compute_tfce.Rd
+6a48b0f14dc74e7e8959107b06e46b87 *man/compute_tfce.Rd
 54f0162e55e44e3b189c935cbf86ac38 *man/compute_troendle.Rd
 3b1509ed770777b249132620cf969ba4 *man/emergencycost.Rd
 94b85dc0b5b738f1eae5e635e2e08d4e *man/get_cluster.Rd
@@ -97,12 +97,13 @@ a2ffa1a867575a4ca0246423ad7153ad *man/plot.clusterlm.Rd
 c7683efbc5df0ef23ea564cdef861dea *man/print.clusterlm.Rd
 8a04a14346b469a9947103a8aeaf87c1 *man/summary.clusterlm.Rd
 1fa80ec3b3577ff83d63ce9f4613afb2 *src/RcppExports.cpp
-840aa7778700e1d674a74abf6af71dd9 *src/clusterdepth.cpp
-5dc3c17f95ab33f094ab7d0ae31c9e0a *src/tfce.cpp
+0f9520cf2ac47beccee6c6fec4be2605 *src/clusterdepth.cpp
+81d470b47d3189064a16b8a183f6501d *src/tfce.cpp
 f804d4d54ef2b7302f9e8c8f376e3ad3 *src/troendle.cpp
 e02f1cce45c50686bbe32e1d7ebcc2df *tests/testthat.R
 6973b164162cf2e19e88fe30506cdbd1 *tests/testthat/test_methods.R
 22ef6e3c009c107f964d5fdd8ed6c48a *tests/testthat/test_methods_cm.R
 a9a42945373a2264db2a4a496141fe8c *tests/testthat/test_methods_cm_rnd.R
 bc7ad23c8caaad8e27750760565662cf *tests/testthat/test_methods_rnd.R
+ca13ad6c5b21c1c1b3d07764a9772543 *vignettes/file26341d6331f0.html
 6cc76492db5cd3ab22f1c8b0b51e44e6 *vignettes/permuco_tutorial.pdf.asis
